@@ -17,7 +17,7 @@ function loadFile() {
 
       // Save the file to the "data" folder
       var xhr = new XMLHttpRequest();
-      xhr.open("POST", "./data/" + file.name, true);
+      xhr.open("GET", "./data/" + file.name, true);
       xhr.setRequestHeader("Content-Type", "application/octet-stream");
       xhr.send(fileContents);
 
